@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Bradley Lindgren - Portfolio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+			<nav class="navBar">
+					<ul class="menu">
+						<li class="myName" id="toTop">
+							<a class="myNameLink" href="">Bradley Lindgren</a>
+						</li>
+						<li><a class="aboutMeMenu menuLink" href="#aboutMeLink">About Me</a></li>
+						<li><a class="myWorkMenu menuLink" href="#myWorkLink">My Work</a></li>
+						<li><a class="contactMeMenu menuLink" href="#contactMeLink">Contact</a></li>
+					</ul>
+			</nav>
+			<div id="readAloud">
+				<img class="readAloudPic" src="css/assets/meLogo.png" alt="">
+				<p class="instructions">click my picture to <br>hear me read the <br> element you select</p>
+			</div>
+			<section class="aboutMeTitle title">
+				<h2 id="aboutMeLink">About Me</h2>
+			</section>
+				<section class="aboutMeContainer">
+					<section class="card" id="card1">
+						<section class="frontMe aboutMe" id="aboutMe1">
+							<p>Full Stack Web Developer</p>
+						</section>
+						<section class="backMe hidden aboutMe" id="backMe1">
+							<p>I'm a full stack web developer with a burning desire to never have to work another sales role in this lifetime.</p>
+						</section>
+					</section>
+					<section class="card" id="card2">
+						<section class="frontMe aboutMe" id="aboutMe2">
+							<p>Father</p>
+						</section>
+						<section class="backMe hidden aboutMe" id="backMe2">
+							<p>I'm a father of two fantastic little girls who make great website responsiveness testers as they mash on my keyboard.</p>
+						</section>
+					</section>
+					<section class="card" id="card3">
+						<section class="frontMe aboutMe" id="aboutMe3">
+							<p>Gamer</p>
+						</section>
+						<section class="backMe hidden aboutMe" id="backMe3">
+							<p>I love video games, especially rpgs. I've logged more hours in Diablo 2 and World of Warcraft than I care to ever find out.</p>
+						</section>
+				</section>
+			</section>
+			<section class="myWorkSection">
+				<h2 class="myWorkTitle title" id="myWorkLink">My Work</h2>
+				<section class="myWork myWork1" id="work1">
+					<a href="https://selectyourhype.netlify.app/" target="_blank"><img src="css/assets/hype.png" alt=""></a>
+					<div class="myWorkTextContainer myWorkTextContainer1">
+						<p>This was my first responsive JS webpage.</p>
+						<p>I had an idea pop into my head that quickly became pseudo code, and then turned into what I call the Hype Level Selector.</p>
+						<p>Exploring the different event listeners, built in JS functions, and creating some of my own to not only make the D pad a functional selector tool, but also finding a way to write in an easter egg using the Konami Code is what I'm most proud of.</p>
+					</div>
+				</section>
+				<section class="myWork myWork2" id="work2">
+					<a class="smallScreenWork2" href="https://flowersfloral.netlify.app/" target="_blank" ><img src="css/assets/flower.png" alt=""></a>
+					<div class="myWorkTextContainer myWorkTextContainer2">
+						<p>This is a placeholder draft of a client website I'm currently in the process of building.</p>
+						<p>This project has had a huge emphasis on communication and collaboration between myself and my client. Getting to see their reaction as their ideas come to life online has been an exciting experience to be a part of.</p>
+					</div>					
+					<a class="bigScreenWork2" href="https://flowersfloral.netlify.app/" target="_blank" ><img src="css/assets/flower.png" alt=""></a>
+
+				</section>
+				<section class="myWork myWork3" id="work3">
+					<a href="https://comparisoncards.netlify.app/" target="_blank" ><img src="css/assets/comparisonGame.png" alt=""></a>
+					<div class="myWorkTextContainer myWorkTextContainer3">
+						<p>This is a simple comparison card game based on the game of WAR.</p>
+						<p>Using a simple playing card API, I created a game where the higher number wins, and a tie leads to each player drawing 4 cards, wtih the card in the first position being compared to decide the victor</p>
+					</div>				
+				</section>
+			</section>
+
+			<section class="contactMeSection">
+				<h2 class="myContactTitle title" id="contactMeLink">Contact</h2>
+				<section class="contactMeSubHeader">
+					<a target="_blank" href="mailto:bradclindgren@gmail.com">BradcLindgren@gmail.com</a>
+				</section>
+				<section class="contactMeIcons">
+					<div class="twitter">
+						<a href="https://twitter.com/Brad_CL" target="_blank" >
+							<img src="css/assets/Twitter_Logo_Blue-310x310.png" alt="Twitter">
+						</a>
+					</div>
+					<div class="instagram">
+						<a href="https://www.instagram.com/brad_cl/" target="_blank" >
+							<img src="css/assets/glyph-logo_May2016-310x310.png" alt="Instagram">
+						</a>
+					</div>
+					<div class="linkedin">
+						<a href="https://www.linkedin.com/in/bradley-lindgren-937380207" target="_blank" >
+							<img src="css/assets/In-2C-54px-R.png" alt="LinkedIn">
+						</a>
+					</div>
+					<div class="GitHub">
+						<a href="https://github.com/BradCL" target="_blank" >
+							<img src="css/assets/GitHub-Mark-32px.png" alt="LinkedIn">
+						</a>
+					</div>
+			</section>
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+			<audio id="aboutMe1Audio" src="css/assets/aboutme1.mp3"></audio>
+			<audio id="aboutMe2Audio" src="css/assets/aboutMe2.mp3"></audio>
+			<audio id="aboutMe3Audio" src="css/assets/aboutMe3.mp3"></audio>
+			<audio id="work1Audio" src="css/assets/mywork1.mp3"></audio>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

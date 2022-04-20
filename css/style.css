@@ -1,0 +1,329 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*==============================
+Base Styles
+===============================*/
+* {
+     text-decoration: none;
+
+}
+.title{
+     font-size: 1.5rem;
+     font-weight: 700;
+     display: flex;
+     justify-content: center;
+     text-shadow: 1px 1px rgb(71, 71, 71);
+}
+.contactMeIcons img {
+     width: 41px;
+}
+body {
+     font-family: 'Roboto Slab', serif;
+     letter-spacing: 0.1em;
+     overflow-x: hidden;
+     background-image: linear-gradient(to bottom, rgb(0, 0, 0), #252525 10%, #303030 20%);
+}
+   
+h1, h2, h3, p, a {
+     font-weight: 300;
+     color: white;
+     text-decoration: none;
+}
+   
+a {
+     color: white;
+     text-decoration: none;
+}
+   
+   
+body a:hover {
+     color: #707070;
+}
+.aboutMeContainer .hidden {
+     display: none;
+}
+
+/*==============================
+Styling
+===============================*/
+#myBtn {
+     display: none; 
+     position: fixed; 
+     bottom: 10%; 
+     right: 1%; 
+     z-index: 99; 
+     border: none; 
+     outline: none; 
+     background-color: rgba(117, 117, 117, 0.3); 
+     color: white; 
+     cursor: pointer; 
+     padding: 15px; 
+     border-radius: 10%; 
+   }
+   
+   #myBtn:hover {
+     background-color: #555;
+   }
+.menu {
+     display: flex;
+     justify-content: flex-end;
+     padding-right: 2%;
+     align-items: center;
+     gap: 2.5%;
+     height: 3rem;
+}
+.myName {
+     display: flex;
+     font-size: 1.25rem;
+     font-weight: 700;
+     margin-right: auto;
+     margin-left: 2.5%;
+}
+.menu a{
+     color: white;
+     font-size: .9rem;
+}
+.menuLink{
+     display: flex;
+     flex-basis: 10%;
+}
+#readAloud {
+     position: fixed;
+     top: 5vh;
+     left: 2vh;
+     z-index: 99; 
+}
+.readAloudPic {
+     width: 75px;
+     border-radius: 50%;
+     box-shadow: 1px 1px gray;
+     margin-bottom: 10px;
+}
+.readAloudPic:hover{
+     border: 2px solid gray;
+}
+.buttonPressed {
+     color: red;
+}
+.instructions {
+     font-size: 12px;
+     color: white;
+
+}
+.aboutMeTitle{
+     display: flex;
+     margin-top: 5rem;
+     justify-content: center;
+     text-align: center;
+}
+.aboutMeTitle h2 {
+     color: white;
+     text-shadow: 1px 1px rgb(161, 161, 161);
+
+}
+.aboutMeContainer{
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     margin-top: 9rem;
+}
+.card {
+     display: flex;
+     flex-direction: column;
+     flex-basis: 350px;
+     height: 400px;
+}
+.frontMe,
+.backMe {
+     align-self: center;
+     width: 100%; 
+}
+.aboutMe{
+     position: relative;
+     display: flex;
+     width: 350px;
+     align-items: flex-start;
+     text-align: center;
+     height: 400px;
+     font-size: 1.25rem;
+     font-weight: 700;
+     border: 1px solid black;
+     line-height: 1.25rem;
+     box-shadow: 2px 2px gray;
+     border-radius: 5%;
+     background-color: black;
+}
+.aboutMe:hover {
+     border: 5px solid gray;
+}
+.aboutMe p {
+     color: white;
+
+}
+.frontMe p{
+     margin-top: 3%;
+     width: 100%;
+     text-shadow: 1px 1px gray;
+}
+.backMe p{
+     display: flex;
+     align-self: center;
+     margin: 0 15%;
+     
+}
+#aboutMe1 {
+     background-image: url(assets/laptopStockImg.jpeg);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+#aboutMe2 {
+     background-image: url(assets/dad.png);
+     background-color: white;
+     background-repeat: no-repeat;
+     background-position: center bottom;
+}
+#aboutMe2 p {
+     color: black;
+     text-shadow: 1px 1px rgb(95, 95, 95);
+}
+#aboutMe3 {
+     background-image: url(assets/gamingkeyboard.jpeg);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+#backMe2{
+     background-color: white;
+}
+#backMe2 p {
+     color: black;
+}
+.myWorkTitle{
+     margin: 15% 0 10% 0;
+     text-align: center;
+     color: white;
+}
+.myWork {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     width: 100%;
+     margin-top: 10%;
+}
+.myWork img {
+     display: flex;
+     width: 100%;
+}
+.myWorkTextContainer{
+     flex-basis: 30%;
+     display: flex;
+     flex-direction: column;
+     gap: 1.5rem;
+}
+.myWorkTextContainer p{
+     color: white;
+}
+.myWork p {
+     text-align: center;
+     line-height: 1.25rem;
+}
+.smallScreenWork2 {
+     display: none;
+}
+.myContactTitle {
+     text-align: center;
+     margin: 10% 0 5% 0;
+}
+.contactMeSubHeader{
+     text-align: center;
+     margin-bottom: 4rem;
+}
+.contactMeIcons {
+     display: flex;
+     margin: 0 auto;
+     height: 110px;
+     width: 50%;
+     align-items: center;
+     justify-content: space-around;
+}
+.contactMeIcons img {
+     /* zoom: .75; */
+}
+/*==============================
+Media Query
+===============================*/
+@media screen and (max-width: 1080px){
+     .aboutMeContainer {
+          flex-direction: column;
+          gap: 100px;
+     }
+     .myWork {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          width: 100%;
+          margin-top: 10%;
+     }
+     .myWorkTextContainer{
+          margin: auto 3rem;
+     }
+     .bigScreenWork2{
+          display: none;
+     }
+     .smallScreenWork2 {
+          display: flex;
+     }
+}
+@media screen and (max-width: 500px){
+     .aboutMeContainer {
+          flex-direction: column;
+     }
+     .myWorkTextContainer{
+          margin: auto 1rem;
+     }
+}
